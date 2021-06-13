@@ -19,7 +19,6 @@ def input(): return sys.stdin.readline().rstrip()
 def divceil(n, k): return 1+(n-1)//k  # n/kの切り上げを返す
 def yn(hantei, yes='Yes', no='No'): print(yes if hantei else no)
 
-
 class PrepereFactorial2:  # maxnumまでの階乗を事前計算して、順列、組み合わせ、重複組み合わせを計算するクラス。逆元のテーブルもpow無しで前計算する。maxnumに比べて関数呼び出しが多いならこちら
     def __init__(self, maxnum=3*10**5, mod=10**9+7):
         self.factorial = [1]*(maxnum+1)
